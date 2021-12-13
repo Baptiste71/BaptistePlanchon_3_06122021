@@ -1,0 +1,19 @@
+{
+  "name": "baptisteplanchon_3_06122021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baptiste71/BaptistePlanchon_3_06122021.git"
+  },
+  "author": "Baptiste71",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baptiste71/BaptistePlanchon_3_06122021/issues"
+  },
+  "homepage": "https://github.com/Baptiste71/BaptistePlanchon_3_06122021#readme"
+}
