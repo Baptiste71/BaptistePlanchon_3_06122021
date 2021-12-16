@@ -14,9 +14,11 @@
 
 <body>
 
-    <header class="accueil">
+    <header>
         
-        <img class="ohmyfood" src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+        <div class="accueil" >
+            <img class="logo-header" src="Maquettes Ohmyfood/images/logo/ohmyfood.png" alt="logo ohmyfood">
+        </div>
 
     </header>
 
@@ -24,17 +26,23 @@
         
         <div class="localisation">
             <form action="#" method="get">
-                <i id="pointage_lieu" class="fas fa-map-marker-alt"></i>
+                <div class="pointage_lieu">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
                 <input type="text" name="ville" id="ville" placeholder="Paris, Belleville" size="30" maxlength="30" />
             </form>
         </div>
         <div>
             <div class="titres-section-1-accueil">
-                <h1>Réservez le menu qui vous convient</h1>
-                <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+                <div class="titre-principal">
+                    <h1>Réservez le menu qui vous convient</h1>
+                </div>
+                <div class="descriptif-titre-principal">
+                    <h3>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h3>
+                </div>
             </div>
             <div>
-                <button type="submit" name="explorer nos restaurants">
+                <button class="btn" type="submit" name="explorer nos restaurants">
                     <span class="texte-bouton-accueil">Explorer nos restaurants</span>
                 </button>
             </div>
@@ -44,7 +52,7 @@
     <section class="section-2-accueil"> <!--Fonctionnement--> 
 
         <div class="titres-section-2-accueil">
-            <h1>Fonctionnement</h1>
+            <h2>Fonctionnement</h2>
         </div>
 
         <div class="etapes-accueil">
@@ -100,7 +108,7 @@
     <section class="section-3 accueil"> <!--Restaurants--> 
 
         <div class="titres-section-3-accueil">
-            <h1>Restaurants</h1>
+            <h2>Restaurants</h2>
         </div>
 
         <div class="ensemble-resto">

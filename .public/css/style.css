@@ -1,4 +1,99 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 h3 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 3%;
+}
+
+.accueil {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-header {
+  width: 40%;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.localisation {
+  background: linear-gradient(#e2e2e2, #f2f2f2);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 20px 0px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  width: 37%;
+}
+
+.pointage_lieu {
+  font-size: 1.4rem;
+  padding-right: 0.6rem;
+}
+
+input {
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  outline-style: none;
+  border: none;
+  background-color: transparent;
+  color: black;
+  padding-left: 15px;
+  opacity: 1;
+}
+
+.titres-section-1-accueil {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.titre-principal {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.titre-principal h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  display: flex;
+  width: 65%;
+  margin-bottom: 0;
+}
+
+.descriptif-titre-principal {
+  display: flex;
+  justify-content: center;
+}
+
+.descriptif-titre-principal h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 80%;
+}
 
 /*# sourceMappingURL=style.css.map */
