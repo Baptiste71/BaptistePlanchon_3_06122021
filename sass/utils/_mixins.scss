@@ -1,0 +1,16 @@
+@mixin police-txt {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+@mixin police-txt-secondaire {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin margin-padding-0 {
+    margin: 0;
+    padding: 0;
+}

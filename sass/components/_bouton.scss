@@ -1,0 +1,11 @@
+.bouton-accueil {
+    @include flex-center;
+
+    &.btn {
+        border: 2px solid transparent;
+        border-radius: 45%;
+        background: linear-gradient($couleur-secondaire, $couleur-primaire);
+        color: white;
+        cursor: pointer;
+    }
+}
