@@ -1,0 +1,81 @@
+
+.titres-section-2-accueil {
+    @include titres-sections-accueil;
+    padding-bottom: 50px;
+}
+
+.etapes-accueil{
+    @include flex-center;
+    flex-direction: column;
+    @include format-mobile;
+    margin-left: -15px;
+}
+
+.filtres {
+    @include flex-center;
+    margin-bottom: 20px;
+}
+
+.choix {
+    @include flex-center;
+    @include police-txt;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0px 6px 10px #F2F2F2;;
+    background-color: $couleur-hover-background-st;
+    border-radius: 20px;
+    height: 60px;
+    width: 90%;
+    margin-left: -15px;
+    
+    &:hover  {
+        background-color: $couleur-hover-background-ed;
+        opacity: .1;
+    }
+
+}
+
+.numero-etape {
+    @include flex-center;
+    align-items: center;
+    @include police-txt;
+    z-index: 2;
+    border: 1px solid transparent;
+    border-radius: 90%;
+    background: $couleur-primaire;
+    color: white;
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.contenu-filtres {
+    @include flex-center;
+    @include format-mobile-filtres-accueil;
+    align-items: center;
+    font-size: 1.2em;
+    margin-left: 40px;
+    & p {
+        @include flex-center;
+        @include format-mobile-filtres-accueil;
+        z-index: 2;
+        margin-left: 70px;
+        color: black;
+        opacity: 1;
+    }
+
+}
+
+.fa-fw {
+    color: gray;
+
+    &:hover {
+        color: $couleur-primaire;
+        opacity: 1;
+    }
+}

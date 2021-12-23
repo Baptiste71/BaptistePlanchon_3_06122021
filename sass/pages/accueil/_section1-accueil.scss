@@ -3,30 +3,23 @@
 .localisation {
     background: linear-gradient(#e2e2e2,#f2f2f2);
     @include flex-center;
+    align-items: center;
+    width: 100%;
     padding: 20px 0px 20px 0px;
 }
-form{
-    display: flex;
-    align-items: center;
-    width: 37%;
-}
+
 .pointage_lieu {
     font-size: 1.4rem;
     padding-right: 0.6rem;
 }
-input {
+.localisation p {
   outline-style: none;
   border: none;
   background-color: transparent;
   color: black;
-  padding-left: 15px;
-  opacity: 1;
-
-    &::placeholder {
+  opacity: 1;  
   font-size: 1.4rem;
   @include police-txt;
- }
- 
 }
 //******************** SECTION 1 ACCUEIL PRESENTATION ********************
 

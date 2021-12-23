@@ -1,11 +1,24 @@
-.bouton-accueil {
-    @include flex-center;
 
-    &.btn {
-        border: 2px solid transparent;
-        border-radius: 45%;
-        background: linear-gradient($couleur-secondaire, $couleur-primaire);
-        color: white;
-        cursor: pointer;
-    }
+.bouton-accueil {
+    @include flex-center; 
+}
+
+.btn {
+    border: 2px solid transparent;
+    border-radius: 45px;
+    background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+    min-width: 50%;
+    max-width: 550%;
+    height: 60px;   
+}
+
+.texte-bouton {
+    @include police-txt;
+    font-weight:400; 
+    font-size: 1.9em;
+     padding-left: 15px;
+    padding-right: 15px;
 }
