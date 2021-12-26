@@ -1,0 +1,12 @@
+header{
+    width: 100%;
+    height: 3%;
+}
+.header-menu {
+    @include flex-center;
+}
+.logo-header {
+    width: 40%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
