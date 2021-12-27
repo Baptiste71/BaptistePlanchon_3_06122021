@@ -1,12 +1,29 @@
 header{
+    @include flex-center;
     width: 100%;
     height: 3%;
 }
 .header-menu {
     @include flex-center;
+    align-items: center;
+    width: 100%;
 }
 .logo-header {
     width: 40%;
     padding-top: 25px;
     padding-bottom: 15px;
 }
+
+.fleche-retour {
+    @include flex;
+    justify-content: flex-start;
+    width: 10%;
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+.logo-menu {
+    @include flex-center;
+    width: 80%;
+}
+
