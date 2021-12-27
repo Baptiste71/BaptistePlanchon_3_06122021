@@ -126,9 +126,65 @@ header {
 }
 
 .menu {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   border-radius: 30px 30px 0 0;
   background-color: white;
   z-index: 2;
+  width: 100%;
+}
+
+.titre-section-2-menu {
+  font-family: "Shrikhand", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+.titre-section-2-menu .fa-heart {
+  font-size: 1.6em;
+  margin-right: 30px;
+}
+
+.section-2-menu {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin-left: 30px;
+  position: relative;
+  text-decoration: underline 5px #99E2D0;
+}
+
+.choix-plats {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.choix-plats p {
+  font-weight: 100;
+}
+
+.repas {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 0px 6px 10px #f2f2f2;
+  padding: 0px 15px 0px 20px;
+  margin-bottom: 20px;
+}
+
+.prix {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-weight: 400;
 }
 
 header {
