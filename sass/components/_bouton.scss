@@ -1,6 +1,9 @@
 
 .bouton-accueil {
-    @include flex-center; 
+    @include flex-center;
+    & :hover {
+        box-shadow: 0px 0px 10px 0px rgba(26, 25, 25, 0.3);
+    } 
 }
 
 .btn {
@@ -13,13 +16,18 @@
     min-width: 50%;
     max-width: 550%;
     height: 60px;
-    margin-bottom: 50px;   
+    margin-bottom: 50px;
+    @include police-txt;
+    font-weight:400; 
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 15px;   
 }
 
 .texte-bouton {
     @include police-txt;
     font-weight:400; 
     font-size: 1.9em;
-     padding-left: 15px;
+    padding-left: 15px;
     padding-right: 15px;
 }

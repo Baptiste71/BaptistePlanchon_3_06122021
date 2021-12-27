@@ -14,6 +14,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.bouton-accueil :hover {
+  box-shadow: 0px 0px 10px 0px rgba(26, 25, 25, 0.3);
+}
 
 .btn {
   border: 2px solid transparent;
@@ -26,6 +29,12 @@ a {
   max-width: 550%;
   height: 60px;
   margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 1.3em;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .texte-bouton {
@@ -123,6 +132,7 @@ header {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  position: static;
 }
 
 .menu {
@@ -131,9 +141,11 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 30px 30px 0 0;
-  background-color: white;
-  z-index: 2;
+  background-color: #fff;
   width: 100%;
+  position: relative;
+  top: -30px;
+  margin-top: -50px;
 }
 
 .titre-section-2-menu {
@@ -146,6 +158,7 @@ header {
 .titre-section-2-menu .fa-heart {
   font-size: 1.6em;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .section-2-menu {
@@ -155,17 +168,18 @@ header {
   font-size: 1.3em;
   margin-left: 30px;
   position: relative;
-  text-decoration: underline 5px #99E2D0;
+  text-decoration: underline 3px #99E2D0;
 }
 
 .choix-plats {
   margin-left: 30px;
   margin-bottom: 10px;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
 .choix-plats p {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .repas {
@@ -182,9 +196,6 @@ header {
 .prix {
   display: flex;
   align-items: flex-end;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-weight: 400;
 }
 
 header {
