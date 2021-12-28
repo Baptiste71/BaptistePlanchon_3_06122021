@@ -19,14 +19,14 @@ a {
 }
 
 .btn {
-  border: 2px solid transparent;
+  border: none;
   border-radius: 45px;
   background: linear-gradient(to bottom right, #FF79DA, #9356dc);
   color: white;
   cursor: pointer;
   opacity: 1;
   min-width: 50%;
-  max-width: 550%;
+  max-width: 55%;
   height: 60px;
   margin-bottom: 50px;
   font-family: "Roboto", sans-serif;
@@ -105,34 +105,26 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
-.logo-header {
-  width: 40%;
-  padding-top: 25px;
-  padding-bottom: 15px;
+.nom-entreprise {
+  font-size: 2.2em;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .fleche-retour {
   display: flex;
   justify-content: flex-start;
-  width: 10%;
   font-size: 2em;
-  margin-left: 30px;
-}
-
-.logo-menu {
-  display: flex;
-  justify-content: center;
-  width: 80%;
+  margin-left: 1%;
 }
 
 .section-1-menu img {
   width: 100%;
   height: 300px;
   object-fit: cover;
-  position: static;
 }
 
 .menu {
@@ -144,7 +136,6 @@ header {
   background-color: #fff;
   width: 100%;
   position: relative;
-  top: -30px;
   margin-top: -50px;
 }
 
@@ -168,7 +159,17 @@ header {
   font-size: 1.3em;
   margin-left: 30px;
   position: relative;
-  text-decoration: underline 3px #99E2D0;
+  width: max-content;
+}
+
+.section-2-menu::after {
+  content: "\a";
+  white-space: pre;
+  border-bottom: solid 3px #99E2D0;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 .choix-plats {
@@ -180,6 +181,13 @@ header {
 }
 .choix-plats p {
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.assiette {
+  width: 100%;
 }
 
 .repas {
@@ -188,7 +196,7 @@ header {
   width: 90%;
   border: 1px solid transparent;
   border-radius: 20px;
-  box-shadow: 0px 6px 10px #f2f2f2;
+  box-shadow: 0px 20px 10px #f2f2f2;
   padding: 0px 15px 0px 20px;
   margin-bottom: 20px;
 }
@@ -210,14 +218,15 @@ header {
   justify-content: center;
 }
 
-.logo-header {
-  width: 40%;
+span {
+  font-size: 2.2em;
   padding-top: 25px;
   padding-bottom: 15px;
+  font-family: "Shrikhand", sans-serif;
 }
 
 .localisation {
-  background: linear-gradient(#e2e2e2, #f2f2f2);
+  background: linear-gradient(#e2e2e2, #fff);
   display: flex;
   justify-content: center;
   align-items: center;

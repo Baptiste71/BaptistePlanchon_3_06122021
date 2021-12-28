@@ -6,24 +6,19 @@ header{
 .header-menu {
     @include flex-center;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
-.logo-header {
-    width: 40%;
-    padding-top: 25px;
-    padding-bottom: 15px;
+.nom-entreprise {
+    font-size: 2.2em;
+    @include police-logo;
 }
 
 .fleche-retour {
     @include flex;
     justify-content: flex-start;
-    width: 10%;
     font-size: 2em;
-    margin-left: 30px;
+    margin-left: 1%;
 }
 
-.logo-menu {
-    @include flex-center;
-    width: 80%;
-}
 

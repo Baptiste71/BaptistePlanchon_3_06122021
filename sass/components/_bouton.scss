@@ -7,14 +7,14 @@
 }
 
 .btn {
-    border: 2px solid transparent;
+    border: none;
     border-radius: 45px;
     background: linear-gradient(to bottom right, $couleur-secondaire, $couleur-primaire);
     color: white;
     cursor: pointer;
     opacity: 1;
     min-width: 50%;
-    max-width: 550%;
+    max-width: 55%;
     height: 60px;
     margin-bottom: 50px;
     @include police-txt;
