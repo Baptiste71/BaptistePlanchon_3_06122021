@@ -4,10 +4,13 @@ footer {
     padding-bottom: 50px;
 }
 
+.ensemble-footer {
+    @include footer-tab-pc;
+}
+
 .logo-footer {
     @include police-logo;
     font-size: 1.5em;
-    width: 27%;
     height: 17px;
     color: white;
     margin-left: 30px;
@@ -38,7 +41,7 @@ footer {
 }
 
 .txt-footer p {
-    margin: 0px 0px 0px 30px;
+    margin: 0px 15px 0px 30px;
 }
 
 .fa-utensils {

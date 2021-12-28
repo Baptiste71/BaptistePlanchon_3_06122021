@@ -16,6 +16,10 @@
     display: flex;
     flex-direction: column;
 }
+@mixin flex-direction-row {
+    display: flex;
+    flex-direction: row;
+}
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -51,5 +55,16 @@
     @media screen and (min-width:$breakpoints) {
         margin-left: 15%;
         margin-right: 15%;
+    }
+}
+
+@mixin footer-tab-pc {
+    @media screen and (min-width:$breakpoints) {
+        @include flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        padding-top: 50px;
     }
 }
