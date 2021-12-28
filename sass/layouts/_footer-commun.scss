@@ -6,7 +6,7 @@ footer {
 
 .logo-footer {
     @include police-logo;
-    font-size: 1.8em;
+    font-size: 1.5em;
     width: 27%;
     height: 17px;
     color: white;
@@ -17,7 +17,7 @@ footer {
 
 .footer-commun {
     @include police-txt;
-    font-size: 1.6em;
+    font-size: 1.3em;
     color: white;
     margin-left: 30px;
 }
