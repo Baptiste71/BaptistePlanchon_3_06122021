@@ -47,3 +47,9 @@
     }
     
 }
+@mixin page-menu-tab-pc {
+    @media screen and (min-width:$breakpoints) {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

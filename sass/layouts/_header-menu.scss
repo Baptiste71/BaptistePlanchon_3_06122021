@@ -12,6 +12,7 @@ header{
 .nom-entreprise {
     font-size: 2.2em;
     @include police-logo;
+    margin: 20px 0px 15px 0px;
 }
 
 .fleche-retour {
