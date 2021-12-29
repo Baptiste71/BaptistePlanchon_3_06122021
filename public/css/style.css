@@ -46,6 +46,20 @@ a {
   padding-right: 15px;
 }
 
+svg {
+  overflow: visible;
+  width: 30px;
+}
+
+.favori {
+  fill: white;
+  stroke: black;
+  stroke-width: 5px;
+}
+.favoripath:hover {
+  fill: linear-gradient(195deg, #9356dc, #b85ce7, #de64f1, #f96eef, #ff79da);
+}
+
 footer {
   background: #353535;
   width: 100%;
@@ -423,6 +437,13 @@ h1 h3 {
   font-size: 1.6em;
 }
 
+@media screen and (min-width: 768px) {
+  .accueil-responsive {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
 .page-menu {
   width: 100%;
   text-decoration: none;
@@ -485,6 +506,24 @@ h1 h3 {
 .coeur-favori {
   padding-right: 25px;
   font-size: 2em;
+}
+
+.nouveau {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  color: #008766;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 0;
+  width: 20%;
+  max-width: 22%;
+  bottom: -100px;
+  left: 73%;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

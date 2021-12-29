@@ -7,6 +7,9 @@
     @include titres-sections-accueil;
 }
 
+.accueil-responsive {
+    @include page-menu-tab-pc;
+}
 
 .page-menu {
     width: 100%;
@@ -62,4 +65,21 @@
 .coeur-favori {
     padding-right: 25px;
     font-size: 2em;
+}
+
+.nouveau {
+    @include police-txt;
+    @include flex-center;
+    font-weight: 400;
+    color: rgb(0, 135, 102);
+    background-color: $couleur-tertiaire;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0;
+    width: 20%;
+    max-width: 22%;
+    bottom: -100px;
+    left: 73%;
+    position: relative;
+    
 }
