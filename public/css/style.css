@@ -36,6 +36,9 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+.btn:hover {
+  filter: brightness(1.5);
+}
 
 .texte-bouton {
   font-family: "Roboto", sans-serif;

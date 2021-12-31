@@ -21,7 +21,10 @@
     font-weight:400; 
     font-size: 1.3em;
     padding-left: 15px;
-    padding-right: 15px;   
+    padding-right: 15px;
+    &:hover {
+        filter: brightness(1.5);
+    }   
 }
 
 .texte-bouton {
