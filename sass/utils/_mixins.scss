@@ -68,3 +68,14 @@
         padding-top: 50px;
     }
 }
+
+@mixin animation-chargement {
+    animation-name: animation-chargement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0.6s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
