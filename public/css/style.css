@@ -313,9 +313,42 @@ header {
   margin-bottom: 20px;
 }
 
+@keyframes apparition-menu {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0.5;
+    visibility: visible;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+}
 .prix {
   display: flex;
   align-items: flex-end;
+}
+
+.plat1 {
+  animation: apparition-menu 1s;
+}
+
+.plat2 {
+  animation: apparition-menu 1.5s;
+}
+
+.plat3 {
+  animation: apparition-menu 2s;
+}
+
+.plat4 {
+  animation: apparition-menu 2.5s;
 }
 
 header {
