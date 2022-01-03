@@ -90,3 +90,15 @@
     animation-play-state: running;
     animation-fill-mode: forwards;
 }
+
+@mixin hover-check {
+    animation-name: hover-check;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+
+}

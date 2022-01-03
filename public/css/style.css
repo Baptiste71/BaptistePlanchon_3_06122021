@@ -307,10 +307,71 @@ header {
   border: 1px solid transparent;
   border-radius: 20px;
   box-shadow: 0px 20px 10px #f2f2f2;
-  padding: 0px 15px 0px 20px;
+  padding-left: 20px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 20px;
+}
+.repas:hover .animation-hover {
+  visibility: visible;
+  background-color: #99E2D0;
+  width: 20%;
+}
+
+.prix {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 15px;
+}
+
+.animation-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  border-radius: 0px 20px 20px 0px;
+}
+.animation-hover:hover .fa-check {
+  animation-name: hover-check;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+
+.fa-check {
+  border: 1px solid white;
+  border-radius: 90%;
+  padding: 5px;
+  color: #99E2D0;
+  background-color: white;
+}
+
+@keyframes hover-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.plat1 {
+  animation: apparition-menu 1s;
+}
+
+.plat2 {
+  animation: apparition-menu 1.5s;
+}
+
+.plat3 {
+  animation: apparition-menu 2s;
+}
+
+.plat4 {
+  animation: apparition-menu 2.5s;
 }
 
 @keyframes apparition-menu {
@@ -330,27 +391,6 @@ header {
     transform: translateY(0px);
   }
 }
-.prix {
-  display: flex;
-  align-items: flex-end;
-}
-
-.plat1 {
-  animation: apparition-menu 1s;
-}
-
-.plat2 {
-  animation: apparition-menu 1.5s;
-}
-
-.plat3 {
-  animation: apparition-menu 2s;
-}
-
-.plat4 {
-  animation: apparition-menu 2.5s;
-}
-
 header {
   display: flex;
   justify-content: center;
