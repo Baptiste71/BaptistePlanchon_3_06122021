@@ -67,10 +67,15 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 20px;
+
     &:hover .animation-hover {
-        visibility: visible;
-        background-color: $couleur-tertiaire;
         width: 20%;
+        transition: width 1s;
+
+        .fa-check-circle {
+            transform: rotate(360deg);
+            transition: transform 1s;
+        }
     }
 }
 
@@ -83,61 +88,74 @@
 .animation-hover {
     @include flex-center;
     align-items: center;
-    visibility: hidden;
+    width: 0;
+    transition: width 1s;
     border-radius: 0px 20px 20px 0px;
-    &:hover .fa-check {
-        @include hover-check;
-    }
+    background-color: $couleur-tertiaire;
 }
 
-.fa-check {
-    border: 1px solid white;
-    border-radius: 90%;
-    padding: 5px;
-    color: $couleur-tertiaire;
-    background-color: white;
+.fa-check-circle {
+    font-size: 1.6em;
+    overflow: hidden;
+    color: white;
+    transform: rotate(0deg);
+    transition: transform 1s;
 }
 
-@keyframes hover-check {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    
+.plat1.entrees {
+    visibility: hidden;
+    animation: apparition-menu 2s forwards;
+}
+.plat2.entrees {
+    visibility: hidden;
+    animation: apparition-menu 2s 0.2s forwards;
+}
+.plat3.entrees {
+    visibility: hidden;
+    animation: apparition-menu 2s 0.4s forwards;
+}
+.plat4.entrees {
+    visibility: hidden;
+    animation: apparition-menu 2s 0.6s forwards;
+}
+.plat1.plats {
+    visibility: hidden;
+    animation: apparition-menu 2s 0.8s forwards;
+}
+.plat2.plats {
+    visibility: hidden;
+    animation: apparition-menu 2s 1s forwards;
+}
+.plat3.plats {
+    visibility: hidden;
+    animation: apparition-menu 2s 1.2s forwards;
+}
+.plat1.desserts {
+    visibility: hidden;
+    animation: apparition-menu 2s 1.4s forwards;
+}
+.plat2.desserts {
+    visibility: hidden;
+    animation: apparition-menu 2s 1.6s forwards;
+}
+.plat3.desserts {
+    visibility: hidden;
+    animation: apparition-menu 2s 1.8s forwards;
 }
 
-.plat1{
-    animation: apparition-menu 1s;
-}
+ 
 
-.plat2 {
-    animation: apparition-menu 1.5s;
-}
-
-.plat3{
-    animation: apparition-menu 2s;
-}
-
-.plat4{
-    animation: apparition-menu 2.5s;
-}
 
 @keyframes apparition-menu {
     0% {
         opacity: 0;
-        visibility: hidden;
         transform: translateY(+20px);
-    }
-    50% {
-        opacity: .5;
         visibility: visible;
-        transform: translateY(+20px);
     }
     100% {
         opacity: 1;
-        visibility: visible;
         transform: translateY(0px);
-
+        visibility: visible;
     }
 }

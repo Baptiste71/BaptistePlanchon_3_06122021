@@ -15,7 +15,6 @@ a {
   justify-content: center;
   align-items: center;
   position: fixed;
-  visibility: hidden;
   background: white;
   z-index: 5;
   height: 100%;
@@ -36,15 +35,16 @@ a {
 @keyframes animation-chargement {
   0% {
     opacity: 1;
-    visibility: visible;
   }
   50% {
     opacity: 0.8;
-    visibility: visible;
+  }
+  99% {
+    z-index: 5;
   }
   100% {
     opacity: 0;
-    visibility: hidden;
+    z-index: -1;
   }
 }
 .cercle1 {
@@ -57,7 +57,6 @@ a {
   height: 100px;
   animation: rotate-center 1s linear 0.6s;
   animation-iteration-count: 3;
-  visibility: visible;
 }
 
 .cercle2 {
@@ -136,10 +135,11 @@ svg {
 .favori {
   fill: white;
   stroke: black;
-  stroke-width: 5px;
+  stroke-width: 10px;
 }
-.favoripath:hover {
-  fill: linear-gradient(195deg, #9356dc, #b85ce7, #de64f1, #f96eef, #ff79da);
+.favori:hover {
+  fill: url(#gradient-fill);
+  stroke-width: 0px;
 }
 
 footer {
@@ -313,9 +313,12 @@ header {
   margin-bottom: 20px;
 }
 .repas:hover .animation-hover {
-  visibility: visible;
-  background-color: #99E2D0;
   width: 20%;
+  transition: width 1s;
+}
+.repas:hover .animation-hover .fa-check-circle {
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .prix {
@@ -328,67 +331,80 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden;
+  width: 0;
+  transition: width 1s;
   border-radius: 0px 20px 20px 0px;
-}
-.animation-hover:hover .fa-check {
-  animation-name: hover-check;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
+  background-color: #99E2D0;
 }
 
-.fa-check {
-  border: 1px solid white;
-  border-radius: 90%;
-  padding: 5px;
-  color: #99E2D0;
-  background-color: white;
+.fa-check-circle {
+  font-size: 1.6em;
+  overflow: hidden;
+  color: white;
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 
-@keyframes hover-check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.plat1 {
-  animation: apparition-menu 1s;
+.plat1.entrees {
+  visibility: hidden;
+  animation: apparition-menu 2s forwards;
 }
 
-.plat2 {
-  animation: apparition-menu 1.5s;
+.plat2.entrees {
+  visibility: hidden;
+  animation: apparition-menu 2s 0.2s forwards;
 }
 
-.plat3 {
-  animation: apparition-menu 2s;
+.plat3.entrees {
+  visibility: hidden;
+  animation: apparition-menu 2s 0.4s forwards;
 }
 
-.plat4 {
-  animation: apparition-menu 2.5s;
+.plat4.entrees {
+  visibility: hidden;
+  animation: apparition-menu 2s 0.6s forwards;
+}
+
+.plat1.plats {
+  visibility: hidden;
+  animation: apparition-menu 2s 0.8s forwards;
+}
+
+.plat2.plats {
+  visibility: hidden;
+  animation: apparition-menu 2s 1s forwards;
+}
+
+.plat3.plats {
+  visibility: hidden;
+  animation: apparition-menu 2s 1.2s forwards;
+}
+
+.plat1.desserts {
+  visibility: hidden;
+  animation: apparition-menu 2s 1.4s forwards;
+}
+
+.plat2.desserts {
+  visibility: hidden;
+  animation: apparition-menu 2s 1.6s forwards;
+}
+
+.plat3.desserts {
+  visibility: hidden;
+  animation: apparition-menu 2s 1.8s forwards;
 }
 
 @keyframes apparition-menu {
   0% {
     opacity: 0;
-    visibility: hidden;
     transform: translateY(20px);
-  }
-  50% {
-    opacity: 0.5;
     visibility: visible;
-    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    visibility: visible;
     transform: translateY(0px);
+    visibility: visible;
   }
 }
 header {
@@ -609,12 +625,12 @@ h1 h3 {
   font-weight: 700;
   border: solid 1px #FFFFFF;
   border-radius: 30px;
-  margin-top: 50px;
   margin-bottom: 50px;
   width: 100%;
   height: 280px;
   box-shadow: 0px 6px 10px #f2f2f2;
   text-decoration: none;
+  position: relative;
 }
 
 .nom-resto img {
@@ -676,9 +692,9 @@ h1 h3 {
   margin: 0;
   width: 20%;
   max-width: 22%;
-  bottom: -100px;
-  left: 73%;
-  position: relative;
+  top: 5%;
+  right: 5%;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,9 +6,11 @@ svg {
 .favori  {
     fill: white;
     stroke: black;
-    stroke-width: 5px;
-    &path:hover {
-    fill: linear-gradient(195deg, #9356dc, #b85ce7, #de64f1, #f96eef, #ff79da);
+    stroke-width: 10px;
+    
+    &:hover {
+        fill: url(#gradient-fill);
+        stroke-width: 0px;
     }
 }
 
