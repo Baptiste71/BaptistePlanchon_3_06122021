@@ -80,7 +80,16 @@
     animation-fill-mode: forwards;
 }
 
-
+@mixin coeur {
+    animation-name: favori;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
 @mixin icon-check {
     animation-name: hover-check;
     animation-duration: 1s;

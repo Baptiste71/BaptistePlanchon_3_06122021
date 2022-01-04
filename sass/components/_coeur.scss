@@ -11,6 +11,15 @@ svg {
     &:hover {
         fill: url(#gradient-fill);
         stroke-width: 0px;
+        @include coeur;
     }
 }
 
+@keyframes favori {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
