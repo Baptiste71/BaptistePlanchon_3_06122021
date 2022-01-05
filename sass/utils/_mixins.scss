@@ -1,48 +1,66 @@
+/* Police d'écriture */
+
 @mixin police-txt {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+
 @mixin police-txt-secondaire {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
+
 @mixin police-logo {
     font-family: 'Shrikhand', sans-serif;
 }
+
+/* Flexbox */
+
 @mixin flex {
     display: flex;
 }
+
 @mixin flex-direction-column {
     display: flex;
     flex-direction: column;
 }
+
 @mixin flex-direction-row {
     display: flex;
     flex-direction: row;
 }
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
 }
+
 @mixin space-between {
     display: flex;
     justify-content: space-between;
 }
+
+/* Mise en page */
+
 @mixin margin-padding-0 {
     margin: 0;
     padding: 0;
 }
+
 @mixin titres-sections-accueil {
     margin-left: 5%;
     @include police-txt;
     font-size: 1.6em;
 }
+/* Format Responsive */
+
 @mixin format-mobile {
     @media screen and (min-width:$breakpoints) {
         @include flex-center;
         flex-direction: row;
     }
 }
+
 @mixin format-mobile-filtres-accueil {
     @media screen and (min-width:$breakpoints) {
         margin-left: 20px; 
@@ -51,6 +69,7 @@
     }
     
 }
+
 @mixin page-menu-tab-pc {
     @media screen and (min-width:$breakpoints) {
         margin-left: 15%;
@@ -68,6 +87,8 @@
         padding-top: 50px;
     }
 }
+
+/* Aminations */
 
 @mixin spinner {
     animation-name: animation-chargement;
@@ -90,6 +111,7 @@
     animation-play-state: running;
     animation-fill-mode: forwards;
 }
+
 @mixin icon-check {
     animation-name: hover-check;
     animation-duration: 1s;
