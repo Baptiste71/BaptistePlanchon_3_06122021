@@ -6,6 +6,7 @@
 /* Aminations */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -308,6 +309,7 @@ header {
 .section-2-menu {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  font-weight: 300;
   font-size: 1.3em;
   margin-left: 30px;
   position: relative;
@@ -329,6 +331,7 @@ header {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  font-weight: 300;
 }
 .choix-plats p h3 {
   text-overflow: ellipsis;
@@ -728,6 +731,7 @@ h1 h3 {
 .descriptif-resto p {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  font-weight: 300;
   font-size: 1.4em;
   margin: 5px 0px 20px 10px;
 }

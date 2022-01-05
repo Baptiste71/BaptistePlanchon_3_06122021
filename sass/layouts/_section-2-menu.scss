@@ -23,6 +23,7 @@
 
 .section-2-menu {
     @include police-txt-secondaire;
+    font-weight: 300;
     font-size: 1.3em;
     margin-left: 30px;
     position: relative;
@@ -43,6 +44,7 @@
     margin-bottom: 10px;
     cursor: pointer;
     @include police-txt-secondaire;
+    font-weight: 300;
     & p h3 {
         text-overflow: ellipsis;
         white-space: nowrap;
