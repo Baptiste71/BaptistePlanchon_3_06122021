@@ -5,6 +5,22 @@
 body {
     margin: 0;
     padding : 0;
+    @include stop-scroll;
+}
+
+@keyframes no-scroll {
+    0% {
+        overflow: hidden;
+    }
+    50% {
+        overflow: hidden;
+    }
+    99% {
+        overflow: hidden;
+    }
+    100% {
+        overflow-y: visible;
+    }
 }
 
 a {

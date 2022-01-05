@@ -6,10 +6,7 @@
     z-index: 5;
     height: 100%;
     width: 100%;
-    @include spinner;
-    & body {
-        opacity: .5;
-    }
+    @include spinner;   
 }
 
 @keyframes animation-chargement {

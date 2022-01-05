@@ -3,8 +3,30 @@
 body {
   margin: 0;
   padding: 0;
+  animation-name: no-scroll;
+  animation-duration: 3.6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
 }
 
+@keyframes no-scroll {
+  0% {
+    overflow: hidden;
+  }
+  50% {
+    overflow: hidden;
+  }
+  99% {
+    overflow: hidden;
+  }
+  100% {
+    overflow-y: visible;
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -27,9 +49,6 @@ a {
   animation-direction: normal;
   animation-play-state: running;
   animation-fill-mode: forwards;
-}
-.chargement-page body {
-  opacity: 0.5;
 }
 
 @keyframes animation-chargement {

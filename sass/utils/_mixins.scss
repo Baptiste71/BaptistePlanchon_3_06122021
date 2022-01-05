@@ -99,5 +99,15 @@
     animation-direction: normal;
     animation-play-state: running;
     animation-fill-mode: forwards;
+}
 
+@mixin stop-scroll {
+    animation-name: no-scroll;
+    animation-duration: 3.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards; 
 }
