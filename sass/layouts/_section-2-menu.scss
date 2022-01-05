@@ -23,12 +23,10 @@
 
 .section-2-menu {
     @include police-txt-secondaire;
-    font-weight: 400;
     font-size: 1.3em;
     margin-left: 30px;
     position: relative;
     width: max-content;
-   
 }
 
 .section-2-menu::after {
@@ -44,9 +42,8 @@
 .choix-plats {
     margin-bottom: 10px;
     cursor: pointer;
-    @include police-txt;
+    @include police-txt-secondaire;
     & p h3 {
-        font-weight: 400;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden; 
@@ -58,6 +55,7 @@
     display: block;
     overflow: hidden;
     
+    
     p {
         max-width: 400px; 
         white-space: nowrap;
@@ -66,6 +64,7 @@
     }
 
     h3 {
+        font-weight: 400;
         max-width: 400px; 
         white-space: nowrap;
         overflow: hidden;
@@ -97,6 +96,7 @@
 }
 
 .prix {
+    @include police-txt;
     @include flex;
     align-items: flex-end;
     padding-right: 15px;

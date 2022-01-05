@@ -308,7 +308,6 @@ header {
 .section-2-menu {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-weight: 400;
   font-size: 1.3em;
   margin-left: 30px;
   position: relative;
@@ -329,10 +328,9 @@ header {
   margin-bottom: 10px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 100;
 }
 .choix-plats p h3 {
-  font-weight: 400;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -350,6 +348,7 @@ header {
   text-overflow: ellipsis;
 }
 .assiette h3 {
+  font-weight: 400;
   max-width: 400px;
   white-space: nowrap;
   overflow: hidden;
@@ -378,6 +377,8 @@ header {
 }
 
 .prix {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   display: flex;
   align-items: flex-end;
   padding-right: 15px;
