@@ -10,6 +10,9 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.chargement-accueil {
   animation-name: no-scroll;
   animation-duration: 3s;
   animation-timing-function: ease-in-out;

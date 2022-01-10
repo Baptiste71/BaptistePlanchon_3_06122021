@@ -4,7 +4,10 @@
 
 body {
     margin: 0;
-    padding : 0;
+    padding : 0;  
+}
+
+.chargement-accueil {
     @include stop-scroll;
 }
 
