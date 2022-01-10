@@ -631,6 +631,7 @@ h1 h3 {
   align-items: center;
   font-size: 1.2em;
   margin-left: 40px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .contenu-filtres {
@@ -643,9 +644,10 @@ h1 h3 {
   display: flex;
   justify-content: center;
   z-index: 2;
-  margin-left: 70px;
+  margin-left: 15%;
   color: black;
   opacity: 1;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .contenu-filtres p {

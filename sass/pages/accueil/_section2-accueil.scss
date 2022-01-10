@@ -62,13 +62,15 @@
     align-items: center;
     font-size: 1.2em;
     margin-left: 40px;
+    width: 100%;
     & p {
         @include flex-center;
         @include format-mobile-filtres-accueil;
         z-index: 2;
-        margin-left: 70px;
+        margin-left: 15%;
         color: black;
         opacity: 1;
+        width: 100%;
     }
 
 }
